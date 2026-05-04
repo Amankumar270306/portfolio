@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  
+  --bg-dark: #121212;
+  --bg-light: #ffffff;
+  --accent-gold: #d4af37;
+  --accent-gold-hover: #b8962e;
+  
+  --text-dark: #111111;
+  --text-light: #f5f5f5;
+  --text-muted: #888888;
+  
+  --border-dark: #2a2a2a;
+  --border-light: #e0e0e0;
+  
+  
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  
+  --card-bg-dark: #1e1e1e;
+  --card-bg-light: #f9f9f9;
+  
+  
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+
+body.theme-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+body.theme-light {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 6rem 0;
+  min-height: 100vh;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.text-gold {
+  color: var(--accent-gold);
+}
+
+.text-small-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  border-radius: 0; 
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-gold {
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+}
+
+.btn-gold:hover {
+  background: var(--accent-gold-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: inherit;
+  border-color: var(--border-dark);
+}
+.theme-light .btn-outline {
+  border-color: var(--border-light);
+}
+
+.btn-outline:hover {
+  background: var(--card-bg-dark);
+}
+.theme-light .btn-outline:hover {
+  background: var(--card-bg-light);
+}
+
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: var(--bg-dark); 
+  color: var(--text-light);
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--accent-gold);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+}
+
+
+main {
+  padding-top: 80px; 
+}
+
+
+.card {
+  padding: 2.5rem;
+  border: 1px solid var(--border-dark);
+  background: transparent;
+}
+.theme-light .card {
+  border-color: var(--border-light);
+}
+
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: transform var(--transition-normal), filter var(--transition-normal);
+}
+
+.project-card:hover img {
+  transform: scale(1.02);
+  filter: grayscale(0%);
+}
+
+.project-card-title {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  z-index: 2;
+}
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  z-index: 1;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-left: 1px solid var(--border-dark);
+  padding-left: 3rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -3.35rem; 
+  top: 0;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--accent-gold);
+  background: var(--bg-dark);
+}
+
+
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
