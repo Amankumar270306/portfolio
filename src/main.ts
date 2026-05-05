@@ -25,7 +25,7 @@ const injectHeader = () => {
       <a href="/experience.html" class="nav-link ${isActive('/experience.html')}">EXPERIENCE</a>
       <a href="/contact.html" class="nav-link ${isActive('/contact.html')}">CONTACT</a>
     </nav>
-    <a href="/contact.html" class="btn btn-gold">INQUIRE</a>
+    <a href="/Resume.pdf" target="_blank" class="btn btn-gold">RESUME</a>
   `;
   document.body.prepend(header);
 };
