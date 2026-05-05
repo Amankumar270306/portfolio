@@ -32,39 +32,38 @@
       </div>
 
       <div style="display: flex; gap: 4rem; margin-bottom: 6rem;" class="animate-fade-up delay-300" v-fade-up>
-        <h3 style="flex: 0 0 250px; color: var(--accent-gold);">Certificates</h3>
-        <div style="flex: 1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
-          
-          <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 300px;">
-            <div>
-              <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10003;</div>
-              <h3 style="color: white; margin-bottom: 0.5rem;">Advanced Interaction Design</h3>
-              <p class="text-small-caps" style="color: var(--text-muted);">Nielsen Norman Group</p>
+        <h3 style="flex: 0 0 250px; color: var(--accent-gold);">Certifications & Technical Training</h3>
+        <div style="flex: 1;">
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 3rem;">
+            
+            <div class="card" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 300px;">
+              <a href="#" class="text-small-caps text-gold" style="position: absolute; right: 2.5rem; top: 2.5rem; text-decoration: none;">View</a>
+              <div>
+                <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10003;</div>
+                <h3 style="color: white; margin-bottom: 0.5rem;">Foundation in Data Structures & Programming</h3>
+                <p class="text-small-caps" style="color: var(--text-muted);">IIT Madras</p>
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 2rem;">Comprehensive foundation in Mathematics, Statistics, and Programming. Covered topics including linear algebra, probability, descriptive statistics, and problem-solving using structured programming and basic data structures.</p>
             </div>
-            <p style="font-size: 0.9rem; margin-top: 2rem;">Mastery in complex system architecture, cognitive load reduction, and predictive user modeling for enterprise-scale platforms.</p>
-          </div>
 
-          <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 300px;">
-            <div>
-              <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10000;</div>
-              <h3 style="color: white; margin-bottom: 0.5rem;">Design Leadership</h3>
-              <p class="text-small-caps" style="color: var(--text-muted);">Cooper Professional Ed.</p>
+            <div class="card" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 300px;">
+              <a href="#" class="text-small-caps text-gold" style="position: absolute; right: 2.5rem; top: 2.5rem; text-decoration: none;">View</a>
+              <div>
+                <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10000;</div>
+                <h3 style="color: white; margin-bottom: 0.5rem;">Introduction to Software Engineering</h3>
+                <p class="text-small-caps" style="color: var(--text-muted);">IBM</p>
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 2rem;">Gained understanding of software engineering principles including SDLC, version control (Git), debugging, testing, and writing scalable, maintainable code.</p>
             </div>
-            <p style="font-size: 0.9rem; margin-top: 2rem;">Strategies for leading high-performing creative teams and aligning design vision with business objectives.</p>
-          </div>
 
+          </div>
+          <div style="text-align: right;">
+            <a href="#" class="btn btn-outline" style="color: white; border-color: var(--border-dark);">View All Certificates</a>
+          </div>
         </div>
       </div>
 
-      <div class="card animate-fade-up delay-400" v-fade-up style="margin-left: calc(250px + 4rem); position: relative; margin-bottom: 6rem;">
-        <div style="position: absolute; right: 2.5rem; top: 2.5rem; color: var(--text-muted); font-size: 2rem; opacity: 0.3;">
-          &#127894; 
-        </div>
-        <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10014;</div>
-        <h2 style="color: white; margin-bottom: 0.5rem;">Inclusive Design Certified</h2>
-        <p class="text-small-caps" style="color: var(--text-muted); margin-bottom: 4rem;">W3C Web Accessibility Initiative</p>
-        <p style="max-width: 600px;">Comprehensive certification in WCAG 2.1 AAA compliance, ensuring digital experiences are accessible, equitable, and usable by all demographics without compromising aesthetic integrity.</p>
-      </div>
+      
 
       <div style="display: flex; gap: 4rem; padding-top: 4rem; border-top: 1px solid var(--border-dark);" class="animate-fade-up delay-200" v-fade-up>
         <h3 style="flex: 0 0 250px; color: var(--accent-gold);">Technical Skills</h3>
