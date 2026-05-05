@@ -1,0 +1,143 @@
+<template>
+  <main>
+    <section class="container" style="padding-top: 6rem; padding-bottom: 4rem;">
+      <div class="contact-layout">
+        
+        <div style="flex: 1; max-width: 500px;" class="animate-fade-up" v-fade-up>
+          <h1 style="margin-bottom: 2rem; line-height: 1.2;">
+            <span style="color: white;">Let's<br/>Create</span><br/>
+            <span class="text-gold" style="font-style: italic;">Something<br/>Extraordinary.</span>
+          </h1>
+          
+          <p style="margin-bottom: 4rem; color: #ccc;">
+            I am currently accepting select commissions and collaborative projects. Please detail your inquiry below, and my studio will respond promptly.
+          </p>
+
+          <div style="border-top: 1px solid var(--border-dark); padding-top: 2rem; margin-bottom: 2rem;">
+            <p class="text-small-caps" style="color: var(--text-muted); margin-bottom: 0.5rem;">Direct Inquiry</p>
+            <a href="mailto:studio@aman.design" style="color: white; text-decoration: none; font-size: 1.1rem; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--accent-gold)'" onmouseout="this.style.color='white'">studio@aman.design</a>
+          </div>
+
+          <div>
+            <p class="text-small-caps" style="color: var(--text-muted); margin-bottom: 0.5rem;">Studio Location</p>
+            <p style="color: white; margin-bottom: 0.25rem; font-size: 1.1rem;">New York City, NY</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Available Globally</p>
+          </div>
+        </div>
+
+        <div style="flex: 1;" class="animate-fade-up delay-200" v-fade-up>
+          <div class="card" style="padding: 3rem;">
+            <form @submit.prevent="handleSubmit">
+              
+              <div style="display: flex; gap: 2rem;">
+                <div class="form-group" style="flex: 1;">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input type="text" id="firstName" class="form-input" required placeholder="John" />
+                </div>
+                <div class="form-group" style="flex: 1;">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input type="text" id="lastName" class="form-input" required placeholder="Doe" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" class="form-input" required placeholder="john.doe@example.com" />
+              </div>
+
+              <div class="form-group select-wrapper">
+                <label class="form-label" for="inquiryType">Inquiry Type</label>
+                <select id="inquiryType" class="form-input" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="spatial">Spatial Curation</option>
+                  <option value="digital">Digital Experience</option>
+                  <option value="consulting">Consulting</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea id="message" class="form-input" required placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1.25rem; margin-top: 1rem;">
+                Send Inquiry &nbsp; &#10148;
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
+
+<script setup lang="ts">
+const handleSubmit = () => {
+  alert('Inquiry sent successfully!');
+};
+</script>
+
+<style scoped>
+.form-group {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.form-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-dark);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  transition: border-color var(--transition-fast);
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+.form-input::placeholder {
+  color: #555;
+}
+select.form-input {
+  appearance: none;
+  cursor: pointer;
+}
+textarea.form-input {
+  min-height: 100px;
+  resize: none;
+}
+/* Custom dropdown arrow */
+.select-wrapper::after {
+  content: '⌄';
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+.contact-layout {
+  display: flex;
+  gap: 6rem;
+  align-items: flex-start;
+}
+@media (max-width: 900px) {
+  .contact-layout {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+</style>
