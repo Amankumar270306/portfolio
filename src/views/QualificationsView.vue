@@ -40,7 +40,7 @@
               <a href="#" class="text-small-caps text-gold" style="position: absolute; right: 2.5rem; top: 2.5rem; text-decoration: none;">View</a>
               <div>
                 <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10003;</div>
-                <h3 style="color: white; margin-bottom: 0.5rem;">Foundation in Data Structures & Programming</h3>
+                <h3 style="color: white; margin-bottom: 0.5rem;">Foundation in Data Science & Programming</h3>
                 <p class="text-small-caps" style="color: var(--text-muted);">IIT Madras</p>
               </div>
               <p style="font-size: 0.9rem; margin-top: 2rem;">Comprehensive foundation in Mathematics, Statistics, and Programming. Covered topics including linear algebra, probability, descriptive statistics, and problem-solving using structured programming and basic data structures.</p>
