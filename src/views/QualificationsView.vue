@@ -1,109 +1,431 @@
 <template>
-  <main>
-    <section class="container" style="padding-top: 4rem;">
-      <h1 class="animate-fade-up" v-fade-up style="max-width: 600px;">Academic Foundation<br/>& Core<br/>Core Competencies</h1>
-      <p class="animate-fade-up delay-100" v-fade-up style="max-width: 500px; margin-bottom: 6rem;">
-        Strong foundation in data science, machine learning, and core computer science with emphasis on algorithms, probability, and systems.
+  <main class="portfolio-page">
+    <!-- HERO SECTION -->
+    <section class="container section hero-section">
+      <h1 class="animate-fade-up" v-fade-up style="max-width: 800px;">Academic Foundation<br/>& Technical Expertise</h1>
+      <p class="animate-fade-up delay-100 subtitle" v-fade-up>
+        Building a strong foundation in Data Science, Artificial Intelligence, and Software Engineering through rigorous academics, hands-on projects, and continuous learning.
       </p>
+    </section>
 
-      <div style="display: flex; gap: 4rem; margin-bottom: 6rem;" class="animate-fade-up delay-200" v-fade-up>
-        <h3 style="flex: 0 0 250px; color: var(--accent-gold);">Education</h3>
-        <div style="flex: 1; display: flex; flex-direction: column; gap: 2rem;">
+    <!-- SECTION 1: EDUCATION -->
+    <section class="container section">
+      <h2 class="section-title animate-fade-up" v-fade-up>Education</h2>
+      
+      <div class="timeline animate-fade-up delay-100" v-fade-up>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <p class="text-small-caps text-gold mb-2">2024 &mdash; Present</p>
+          <h3 class="mb-2">Bachelor of Science (B.S.)</h3>
+          <p class="degree-title mb-4">Data Science and Applications</p>
+          <h4 class="institution mb-4">Indian Institute of Technology Madras</h4>
           
-          <div class="card" style="position: relative;">
-            <div style="position: absolute; right: 2.5rem; top: 2.5rem; color: var(--text-muted); font-size: 2rem; opacity: 0.3;">
-              &#9651; 
-            </div>
-            <p class="text-small-caps text-muted" style="margin-bottom: 0.5rem;">2024 &mdash; present</p>
-            <h2 style="color: white; margin-bottom: 0.5rem;">Bachelor of Science (B.S.)</h2>
-            <p style="
-            color: var(--accent-gold);
-            font-size: 1.05rem;
-            margin-bottom: 0.6rem;
-            letter-spacing: 0.5px;">
-             In Data Science and Application</p>
-            <h3 class="text-gold" style="margin-bottom: 1.5rem;">Indian Institute of Technology Madras</h3>
-            <p style="color: white; line-height: 1.8;">
-                Focused on Data Science, Machine Learning, and Core Computer Science fundamentals including algorithms, probability, and systems.
-            </p>
+          <div class="badges-row mb-6">
+            <span class="badge badge-outline">Foundation Level Completed</span>
+            <span class="badge badge-outline">Diploma Level (In Progress)</span>
           </div>
-
-        </div>
-      </div>
-
-      <div style="display: flex; gap: 4rem; margin-bottom: 6rem;" class="animate-fade-up delay-300" v-fade-up>
-        <h3 style="flex: 0 0 250px; color: var(--accent-gold);">Certifications & Technical Training</h3>
-        <div style="flex: 1;">
-          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 3rem;">
-            
-            <div class="card" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 300px;">
-              <a href="#" class="text-small-caps text-gold" style="position: absolute; right: 2.5rem; top: 2.5rem; text-decoration: none;">View</a>
-              <div>
-                <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10003;</div>
-                <h3 style="color: white; margin-bottom: 0.5rem;">Foundation in Data Science & Programming</h3>
-                <p class="text-small-caps" style="color: var(--text-muted);">IIT Madras</p>
-              </div>
-              <p style="font-size: 0.9rem; margin-top: 2rem;">Comprehensive foundation in Mathematics, Statistics, and Programming. Covered topics including linear algebra, probability, descriptive statistics, and problem-solving using structured programming and basic data structures.</p>
+          
+          <div class="coursework-section mt-6">
+            <h5 class="text-small-caps text-muted mb-4">Relevant Coursework</h5>
+            <div class="chips-container">
+              <span class="chip">Machine Learning</span>
+              <span class="chip">Database Management Systems</span>
+              <span class="chip">Data Structures & Algorithms</span>
+              <span class="chip">Statistics</span>
+              <span class="chip">Mathematics</span>
+              <span class="chip">Modern Application Development</span>
+              <span class="chip">Programming</span>
+              <span class="chip">System Commands</span>
             </div>
-
-            <div class="card" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 300px;">
-              <a href="#" class="text-small-caps text-gold" style="position: absolute; right: 2.5rem; top: 2.5rem; text-decoration: none;">View</a>
-              <div>
-                <div class="text-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">&#10000;</div>
-                <h3 style="color: white; margin-bottom: 0.5rem;">Introduction to Software Engineering</h3>
-                <p class="text-small-caps" style="color: var(--text-muted);">IBM</p>
-              </div>
-              <p style="font-size: 0.9rem; margin-top: 2rem;">Gained understanding of software engineering principles including SDLC, version control (Git), debugging, testing, and writing scalable, maintainable code.</p>
-            </div>
-
           </div>
-          <div style="text-align: right;">
-            <a href="#" class="btn btn-outline" style="color: white; border-color: var(--border-dark);">View All Certificates</a>
+          
+          <div class="mt-8">
+            <a href="https://study.iitm.ac.in/ds/academics.html#AC11" target="_blank" class="btn btn-outline">View Curriculum</a>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- SECTION 2: CERTIFICATIONS -->
+    <section class="container section">
+      <h2 class="section-title animate-fade-up" v-fade-up>Certifications</h2>
       
+      <div class="cards-grid animate-fade-up delay-100" v-fade-up>
+        <div class="card cert-card">
+          <h3 class="mb-2">Foundation in Data Science & Programming</h3>
+          <p class="text-small-caps text-gold mb-6">Indian Institute of Technology Madras</p>
+          
+          <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
+          <ul class="cert-skills-list mb-8">
+            <li>&#10003; Python</li>
+            <li>&#10003; Statistics</li>
+            <li>&#10003; Mathematics</li>
+            <li>&#10003; Computational Thinking</li>
+            <li>&#10003; Problem Solving</li>
+          </ul>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-outline btn-sm">View Credential</a>
+          </div>
+        </div>
 
-      <div style="display: flex; gap: 4rem; padding-top: 4rem; border-top: 1px solid var(--border-dark);" class="animate-fade-up delay-200" v-fade-up>
-        <h3 style="flex: 0 0 250px; color: var(--accent-gold);">Technical Skills</h3>
-        <div style="flex: 1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; color: white;">
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 0.9rem;">
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Design Systems Architecture</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Motion & Interaction Design</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">CSS / Tailored Frameworks</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Generative AI Integration</li>
+        <div class="card cert-card">
+          <h3 class="mb-2">Introduction to Software Engineering</h3>
+          <p class="text-small-caps text-gold mb-6">IBM</p>
+          
+          <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
+          <ul class="cert-skills-list mb-8">
+            <li>&#10003; SDLC</li>
+            <li>&#10003; Git</li>
+            <li>&#10003; Testing</li>
+            <li>&#10003; Debugging</li>
+            <li>&#10003; Software Architecture</li>
           </ul>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 0.9rem;">
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">High-Fidelity Prototyping</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Spatial Computing Interfaces</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Typography & Grid Systems</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Accessibility (WCAG) Compliance</li>
-          </ul>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-outline btn-sm">View Credential</a>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- SECTION 3: TECHNICAL EXPERTISE -->
+    <section class="container section">
+      <h2 class="section-title animate-fade-up" v-fade-up>Technical Expertise</h2>
       
-      <div style="display: flex; gap: 4rem; padding-top: 4rem; border-top: 1px solid var(--border-dark);" class="animate-fade-up delay-200" v-fade-up>
-        <h3 style="flex: 0 0 250px; color: var(--accent-gold);">    Achievements</h3>
-        <div style="flex: 1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; color: white;">
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 0.9rem;">
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Design Systems Architecture</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Motion & Interaction Design</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">CSS / Tailored Frameworks</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Generative AI Integration</li>
-          </ul>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 0.9rem;">
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">High-Fidelity Prototyping</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Spatial Computing Interfaces</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Typography & Grid Systems</li>
-            <li style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-dark);">Accessibility (WCAG) Compliance</li>
-          </ul>
+      <div class="expertise-grid animate-fade-up delay-100" v-fade-up>
+        <div class="card expertise-card">
+          <h3 class="text-small-caps text-gold mb-4">Programming</h3>
+          <div class="chips-container">
+            <span class="chip">Python</span>
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Bash</span>
+            <span class="chip">R</span>
+          </div>
+        </div>
+
+        <div class="card expertise-card">
+          <h3 class="text-small-caps text-gold mb-4">Artificial Intelligence</h3>
+          <div class="chips-container">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Deep Learning</span>
+            <span class="chip">Data Analysis</span>
+            <span class="chip">Statistics</span>
+            <span class="chip">Data Visualization</span>
+          </div>
+        </div>
+
+        <div class="card expertise-card">
+          <h3 class="text-small-caps text-gold mb-4">Backend Development</h3>
+          <div class="chips-container">
+            <span class="chip">Flask</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SQLite</span>
+          </div>
+        </div>
+
+        <div class="card expertise-card">
+          <h3 class="text-small-caps text-gold mb-4">Frontend Development</h3>
+          <div class="chips-container">
+            <span class="chip">Vue.js</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="card expertise-card">
+          <h3 class="text-small-caps text-gold mb-4">Developer Tools</h3>
+          <div class="chips-container">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Docker</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Jupyter Notebook</span>
+            <span class="chip">Postman</span>
+          </div>
+        </div>
+
+        <div class="card expertise-card">
+          <h3 class="text-small-caps text-gold mb-4">Currently Learning</h3>
+          <div class="chips-container">
+            <span class="chip">AWS</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">LangChain</span>
+            <span class="chip">LangGraph</span>
+            <span class="chip">PyTorch</span>
+          </div>
         </div>
       </div>
+    </section>
 
+    <!-- SECTION 5: ACADEMIC & PROFESSIONAL HIGHLIGHTS -->
+    <section class="container compact-section">
+      <h2 class="section-title animate-fade-up" v-fade-up>Academic & Professional Highlights</h2>
+      
+      <div class="stats-grid animate-fade-up delay-100" v-fade-up>
+        <div class="stat-card card">
+          <div class="stat-number text-gold">8+</div>
+          <div class="stat-label">Foundation Courses<br/>Completed</div>
+        </div>
+        
+        <div class="stat-card card">
+          <div class="stat-number text-gold">10+</div>
+          <div class="stat-label">Projects<br/>Completed</div>
+        </div>
+
+        <div class="stat-card card">
+          <div class="stat-number text-gold">7+</div>
+          <div class="stat-label">Programming<br/>Languages</div>
+        </div>
+
+        <div class="stat-card card">
+          <div class="stat-text text-gold">AI & ML</div>
+          <div class="stat-label">Core Research<br/>Areas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CALL TO ACTION -->
+    <section class="container compact-section cta-section text-center animate-fade-up" v-fade-up>
+      <h2 class="mb-4">Interested in collaborating?</h2>
+      <p class="cta-subtitle mx-auto mb-8">
+        I'm always open to discussing research opportunities, innovative projects, internships, and software engineering collaborations.
+      </p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-gold">Download Resume</a>
+        <router-link to="/contact" class="btn btn-outline">Contact Me</router-link>
+      </div>
     </section>
   </main>
 </template>
 
 <script setup lang="ts">
+// Logic here if needed
 </script>
+
+<style scoped>
+/* UTILITIES */
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-auto { margin-top: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.text-center { text-align: center; }
+
+/* Override global section for this page to reduce huge vertical gaps */
+.section {
+  min-height: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.compact-section {
+  min-height: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* TYPOGRAPHY */
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 4rem;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--border-dark);
+  padding-bottom: 1.5rem;
+}
+
+/* BADGES & CHIPS */
+.badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+.badge-outline {
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.chip {
+  background: var(--card-bg-dark);
+  border: 1px solid var(--border-dark);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+.chip:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* EDUCATION SPECIFIC */
+.degree-title {
+  color: var(--accent-gold);
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+.institution {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-family: var(--font-sans);
+}
+
+/* CARDS GRID (Certifications) */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal);
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-gold);
+}
+.cert-skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+.cert-skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* EXPERTISE GRID */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.expertise-card {
+  background: transparent;
+  transition: border-color var(--transition-fast);
+}
+.expertise-card:hover {
+  border-color: var(--accent-gold);
+}
+
+/* STATS GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  transition: transform var(--transition-normal);
+}
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-gold);
+}
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.stat-text {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.stat-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+.cta-subtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE RESPONSIVE */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .stat-number {
+    font-size: 3rem;
+  }
+  .stat-text {
+    font-size: 2rem;
+  }
+  .interest-badge {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
