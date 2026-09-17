@@ -81,7 +81,7 @@
               <p class="card-link">amankumar.pro2006@gmail.com</p>
             </a>
 
-            <a href="https://www.linkedin.com/in/aman-kumar-212878358/" target="_blank" class="grid-card">
+            <a href="https://www.linkedin.com/in/aman-kumar-aka-umang/" target="_blank" class="grid-card">
               <div class="card-header">
                 <div class="icon-circle">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +91,7 @@
                 <h3 class="card-title">LinkedIn</h3>
               </div>
               <p class="card-desc">Let's connect and grow our network.</p>
-              <p class="card-link">linkedin.com/in/aman-kumar-212878358</p>
+              <p class="card-link">linkedin.com/in/aman-kumar-aka-umang</p>
             </a>
 
             <a href="https://github.com/Amankumar270306" target="_blank" class="grid-card">
@@ -107,7 +107,7 @@
               <p class="card-link">github.com/Amankumar270306</p>
             </a>
 
-            <a href="#" class="grid-card">
+            <a href="/Resume.pdf" target="_blank" class="grid-card">
               <div class="card-header">
                 <div class="icon-circle">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">

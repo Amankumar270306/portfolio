@@ -177,12 +177,12 @@
         </div>
         
         <div class="stat-card card">
-          <div class="stat-number text-gold">10+</div>
+          <div class="stat-number text-gold">5</div>
           <div class="stat-label">Projects<br/>Completed</div>
         </div>
 
         <div class="stat-card card">
-          <div class="stat-number text-gold">7+</div>
+          <div class="stat-number text-gold">5</div>
           <div class="stat-label">Programming<br/>Languages</div>
         </div>
 
@@ -200,7 +200,7 @@
         I'm always open to discussing research opportunities, innovative projects, internships, and software engineering collaborations.
       </p>
       <div class="cta-buttons">
-        <a href="#" class="btn btn-gold">Download Resume</a>
+        <a href="/Resume.pdf" target="_blank" class="btn btn-gold">Download Resume</a>
         <router-link to="/contact" class="btn btn-outline">Contact Me</router-link>
       </div>
     </section>
