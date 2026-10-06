@@ -7,7 +7,6 @@
       </p>
       
       <div class="projects-grid">
-        <!-- PROJECT 1: JEE Counselling -->
         <a 
           href="https://counsellingwebsite.vercel.app" 
           target="_blank" 
@@ -48,7 +47,6 @@
           </div>
         </a>
 
-        <!-- PROJECT 2: Trekking Management Application -->
         <a 
           href="https://github.com/Amankumar270306" 
           target="_blank" 

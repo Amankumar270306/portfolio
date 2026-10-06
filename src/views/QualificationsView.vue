@@ -1,6 +1,5 @@
 <template>
   <main class="portfolio-page">
-    <!-- HERO SECTION -->
     <section class="container section hero-section">
       <h1 class="animate-fade-up" v-fade-up style="max-width: 800px;">Academic Foundation<br/>& Technical Expertise</h1>
       <p class="animate-fade-up delay-100 subtitle" v-fade-up>
@@ -8,7 +7,6 @@
       </p>
     </section>
 
-    <!-- SECTION 1: EDUCATION -->
     <section class="container section">
       <h2 class="section-title animate-fade-up" v-fade-up>Education</h2>
       
@@ -46,7 +44,6 @@
       </div>
     </section>
 
-    <!-- SECTION 2: CERTIFICATIONS -->
     <section class="container section">
       <h2 class="section-title animate-fade-up" v-fade-up>Certifications</h2>
       
@@ -58,10 +55,9 @@
           <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
           <ul class="cert-skills-list mb-8">
             <li>&#10003; Python</li>
-            <li>&#10003; Statistics</li>
-            <li>&#10003; Mathematics</li>
+            <li>&#10003; Mathematics & Statistics</li>
             <li>&#10003; Computational Thinking</li>
-            <li>&#10003; Problem Solving</li>
+            <li>&#10003; Basic Linux & Shell Scripting</li>
           </ul>
           
           <div class="mt-auto">
@@ -70,16 +66,15 @@
         </div>
 
         <div class="card cert-card">
-          <h3 class="mb-2">Introduction to Software Engineering</h3>
-          <p class="text-small-caps text-gold mb-6">IBM</p>
+          <h3 class="mb-2">AWS Academy Cloud Foundations</h3>
+          <p class="text-small-caps text-gold mb-6">Amazon Web Services (AWS)</p>
           
           <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
           <ul class="cert-skills-list mb-8">
-            <li>&#10003; SDLC</li>
-            <li>&#10003; Git</li>
-            <li>&#10003; Testing</li>
-            <li>&#10003; Debugging</li>
-            <li>&#10003; Software Architecture</li>
+            <li>&#10003; Cloud Concepts & Architecture</li>
+            <li>&#10003; Core AWS Services (EC2, S3, RDS)</li>
+            <li>&#10003; Security, Identity & Access Management</li>
+            <li>&#10003; Cloud Economics and Billing</li>
           </ul>
           
           <div class="mt-auto">
@@ -89,7 +84,6 @@
       </div>
     </section>
 
-    <!-- SECTION 3: TECHNICAL EXPERTISE -->
     <section class="container section">
       <h2 class="section-title animate-fade-up" v-fade-up>Technical Expertise</h2>
       
@@ -166,7 +160,6 @@
       </div>
     </section>
 
-    <!-- SECTION 5: ACADEMIC & PROFESSIONAL HIGHLIGHTS -->
     <section class="container compact-section">
       <h2 class="section-title animate-fade-up" v-fade-up>Academic & Professional Highlights</h2>
       
@@ -193,7 +186,6 @@
       </div>
     </section>
 
-    <!-- SECTION 7: CALL TO ACTION -->
     <section class="container compact-section cta-section text-center animate-fade-up" v-fade-up>
       <h2 class="mb-4">Interested in collaborating?</h2>
       <p class="cta-subtitle mx-auto mb-8">
@@ -208,11 +200,9 @@
 </template>
 
 <script setup lang="ts">
-// Logic here if needed
 </script>
 
 <style scoped>
-/* UTILITIES */
 .mb-2 { margin-bottom: 0.5rem; }
 .mb-4 { margin-bottom: 1rem; }
 .mb-6 { margin-bottom: 1.5rem; }
@@ -224,14 +214,12 @@
 .mx-auto { margin-left: auto; margin-right: auto; }
 .text-center { text-align: center; }
 
-/* Override global section for this page to reduce huge vertical gaps */
 .section {
   min-height: auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-/* HERO SECTION */
 .hero-section {
   padding-top: 6rem;
   padding-bottom: 4rem;
@@ -253,7 +241,6 @@
   padding-bottom: 4rem;
 }
 
-/* TYPOGRAPHY */
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 4rem;
@@ -262,7 +249,6 @@
   padding-bottom: 1.5rem;
 }
 
-/* BADGES & CHIPS */
 .badges-row {
   display: flex;
   flex-wrap: wrap;
@@ -302,7 +288,6 @@
   transform: translateY(-2px);
 }
 
-/* EDUCATION SPECIFIC */
 .degree-title {
   color: var(--accent-gold);
   font-size: 1.15rem;
@@ -314,7 +299,6 @@
   font-family: var(--font-sans);
 }
 
-/* CARDS GRID (Certifications) */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -343,7 +327,6 @@
   gap: 0.5rem;
 }
 
-/* EXPERTISE GRID */
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -357,7 +340,6 @@
   border-color: var(--accent-gold);
 }
 
-/* STATS GRID */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -395,7 +377,6 @@
   letter-spacing: 1px;
 }
 
-/* CTA SECTION */
 .cta-section {
   padding-top: 4rem;
   padding-bottom: 8rem;
@@ -411,7 +392,6 @@
   flex-wrap: wrap;
 }
 
-/* RESPONSIVE RESPONSIVE */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;

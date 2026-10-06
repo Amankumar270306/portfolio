@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    <!-- SECTION: RESEARCH INTERESTS -->
+
     <section class="container" style="padding-top: 2rem;">
       <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
         <h2 class="animate-fade-up" v-fade-up style="max-width: 500px; color: #cccccc;">Research Interests</h2>
@@ -82,7 +82,7 @@
         <div class="interest-badge">Large Language Models</div>
       </div>
     </section>
-    <!-- SECTION: CURRENTLY EXPLORING -->
+
     <section class="container" style="padding-top: 6rem; padding-bottom: 6rem;">
       <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
         <h2 class="animate-fade-up" v-fade-up style="max-width: 500px; color: #cccccc;">Currently Exploring</h2>

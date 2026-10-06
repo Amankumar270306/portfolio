@@ -3,7 +3,6 @@
     <section class="container" style="padding-top: 6rem; padding-bottom: 6rem;">
       <div class="contact-layout">
         
-        <!-- LEFT COLUMN -->
         <div class="left-col animate-fade-up" v-fade-up>
           <h1 class="main-title">
             <span class="text-white">Let's<br/>Connect &</span>
@@ -58,10 +57,8 @@
           </div>
         </div>
 
-        <!-- RIGHT COLUMN -->
         <div class="right-col animate-fade-up delay-200" v-fade-up>
           
-          <!-- GET IN TOUCH GRID -->
           <div class="section-header">
             <p class="text-small-caps text-gold">Get In Touch</p>
             <div class="header-line"></div>
@@ -75,7 +72,7 @@
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
-                <h3 class="card-title">Email Me</h3>
+                <h3 class="card-title">Direct Email</h3>
               </div>
               <p class="card-desc">Drop me an email and I'll get back to you.</p>
               <p class="card-link">amankumar.pro2006@gmail.com</p>
@@ -103,7 +100,7 @@
                 </div>
                 <h3 class="card-title">GitHub</h3>
               </div>
-              <p class="card-desc">Explore my projects, code, and contributions.</p>
+              <p class="card-desc">Explore my code, contributions, and repositories.</p>
               <p class="card-link">github.com/Amankumar270306</p>
             </a>
 
@@ -124,7 +121,6 @@
             </a>
           </div>
 
-          <!-- LETS COLLABORATE ROW -->
           <div class="section-header" style="margin-top: 3rem;">
             <p class="text-small-caps text-gold">Let's Collaborate</p>
             <div class="header-line"></div>
@@ -149,7 +145,6 @@
             </div>
           </div>
 
-          <!-- BOTTOM BANNER -->
           <div class="card cta-banner">
             <div class="cta-content">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 0.25rem;">
@@ -190,7 +185,6 @@
   flex: 1;
 }
 
-/* LEFT COLUMN STYLES */
 .main-title {
   font-size: clamp(3.5rem, 5vw, 4.5rem);
   line-height: 1.1;
@@ -268,7 +262,6 @@
 }
 
 
-/* RIGHT COLUMN STYLES */
 .section-header {
   margin-bottom: 1.5rem;
 }
@@ -340,7 +333,6 @@
   align-items: center;
 }
 
-/* LETS COLLABORATE ROW */
 .collaborate-tags {
   display: flex;
   flex-wrap: wrap;
@@ -364,7 +356,6 @@
   background: rgba(255, 255, 255, 0.02);
 }
 
-/* BOTTOM CTA BANNER */
 .cta-banner {
   display: flex;
   justify-content: space-between;
