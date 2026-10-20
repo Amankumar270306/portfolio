@@ -21,9 +21,31 @@ const router = createRouter({
     },
 
     {
+      path: '/education',
+      name: 'education',
+      component: () => import('../views/EducationView.vue')
+    },
+    {
+      path: '/experience',
+      name: 'experience',
+      component: () => import('../views/ExperienceView.vue')
+    },
+    {
+      path: '/experience-achievements',
+      redirect: '/experience'
+    },
+    {
+      path: '/achievements',
+      redirect: '/experience'
+    },
+    {
+      path: '/profiles',
+      name: 'profiles',
+      component: () => import('../views/ProfilesView.vue')
+    },
+    {
       path: '/qualifications',
-      name: 'qualifications',
-      component: () => import('../views/QualificationsView.vue')
+      redirect: '/education'
     },
     {
       path: '/contact',
@@ -36,14 +58,9 @@ const router = createRouter({
   }
 });
 
-router.beforeEach((to, _from, next) => {
-  if (to.path === '/' || to.path === '/about') {
-    document.body.classList.add('theme-light');
-    document.body.classList.remove('theme-dark');
-  } else {
-    document.body.classList.add('theme-dark');
-    document.body.classList.remove('theme-light');
-  }
+router.beforeEach((_to, _from, next) => {
+  document.body.classList.add('theme-dark');
+  document.body.classList.remove('theme-light');
   next();
 });
 
