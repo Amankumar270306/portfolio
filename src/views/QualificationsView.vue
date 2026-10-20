@@ -43,47 +43,6 @@
         </div>
       </div>
     </section>
-
-    <section class="container section">
-      <h2 class="section-title animate-fade-up" v-fade-up>Certifications</h2>
-      
-      <div class="cards-grid animate-fade-up delay-100" v-fade-up>
-        <div class="card cert-card">
-          <h3 class="mb-2">Foundation in Data Science & Programming</h3>
-          <p class="text-small-caps text-gold mb-6">Indian Institute of Technology Madras</p>
-          
-          <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
-          <ul class="cert-skills-list mb-8">
-            <li>&#10003; Python</li>
-            <li>&#10003; Mathematics & Statistics</li>
-            <li>&#10003; Computational Thinking</li>
-            <li>&#10003; Basic Linux & Shell Scripting</li>
-          </ul>
-          
-          <div class="mt-auto">
-            <a href="#" class="btn btn-outline btn-sm">View Credential</a>
-          </div>
-        </div>
-
-        <div class="card cert-card">
-          <h3 class="mb-2">AWS Academy Cloud Foundations</h3>
-          <p class="text-small-caps text-gold mb-6">Amazon Web Services (AWS)</p>
-          
-          <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
-          <ul class="cert-skills-list mb-8">
-            <li>&#10003; Cloud Concepts & Architecture</li>
-            <li>&#10003; Core AWS Services (EC2, S3, RDS)</li>
-            <li>&#10003; Security, Identity & Access Management</li>
-            <li>&#10003; Cloud Economics and Billing</li>
-          </ul>
-          
-          <div class="mt-auto">
-            <a href="#" class="btn btn-outline btn-sm">View Credential</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="container section">
       <div class="cp-section-header animate-fade-up" v-fade-up>
         <div>
@@ -318,6 +277,46 @@
               <span>View CodeChef Profile</span>
               <span class="btn-arrow">↗</span>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container section">
+      <h2 class="section-title animate-fade-up" v-fade-up>Certifications</h2>
+      
+      <div class="cards-grid animate-fade-up delay-100" v-fade-up>
+        <div class="card cert-card">
+          <h3 class="mb-2">Foundation in Data Science & Programming</h3>
+          <p class="text-small-caps text-gold mb-6">Indian Institute of Technology Madras</p>
+          
+          <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
+          <ul class="cert-skills-list mb-8">
+            <li>&#10003; Python</li>
+            <li>&#10003; Mathematics & Statistics</li>
+            <li>&#10003; Computational Thinking</li>
+            <li>&#10003; Basic Linux & Shell Scripting</li>
+          </ul>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-outline btn-sm">View Credential</a>
+          </div>
+        </div>
+
+        <div class="card cert-card">
+          <h3 class="mb-2">AWS Academy Cloud Foundations</h3>
+          <p class="text-small-caps text-gold mb-6">Amazon Web Services (AWS)</p>
+          
+          <h5 class="text-small-caps text-muted mb-4">Skills Learned:</h5>
+          <ul class="cert-skills-list mb-8">
+            <li>&#10003; Cloud Concepts & Architecture</li>
+            <li>&#10003; Core AWS Services (EC2, S3, RDS)</li>
+            <li>&#10003; Security, Identity & Access Management</li>
+            <li>&#10003; Cloud Economics and Billing</li>
+          </ul>
+          
+          <div class="mt-auto">
+            <a href="#" class="btn btn-outline btn-sm">View Credential</a>
           </div>
         </div>
       </div>
