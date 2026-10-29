@@ -107,8 +107,8 @@
 
           <div class="cp-handle-box mb-4">
             <span class="handle-label">Handle</span>
-            <a href="https://codeforces.com/profile/amankumar.pro" target="_blank" rel="noopener noreferrer" class="handle-tag">
-              @amankumar.pro
+            <a href="https://codeforces.com/profile/aman.study25" target="_blank" rel="noopener noreferrer" class="handle-tag">
+              @aman.study25
             </a>
           </div>
 
@@ -124,7 +124,7 @@
           </div>
 
           <div class="mt-auto">
-            <a href="https://codeforces.com/profile/amankumar.pro" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cp-btn">
+            <a href="https://codeforces.com/profile/aman.study25" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm cp-btn">
               <span>View Codeforces Profile</span>
               <span class="btn-arrow">&#8599;</span>
             </a>
@@ -545,8 +545,8 @@ const profiles = ref<Record<string, CPProfile>>({
     platform: 'Codeforces',
     subtitle: 'Global Timed Rounds',
     badge: 'Div. 2 & 3',
-    handle: 'amankumar.pro',
-    url: 'https://codeforces.com/profile/amankumar.pro',
+    handle: 'aman.study25',
+    url: 'https://codeforces.com/profile/aman.study25',
     rating: 921,
     maxRating: 921,
     rank: 'Newbie',
