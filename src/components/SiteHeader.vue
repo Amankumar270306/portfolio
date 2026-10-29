@@ -1,22 +1,24 @@
 <template>
   <header class="site-header">
-    <router-link to="/" class="logo">AMAN</router-link>
-    <nav class="nav-links" :class="{ 'nav-open': isMenuOpen }">
+    <router-link to="/" class="logo" aria-label="Aman Kumar - Home">AMAN</router-link>
+    <nav id="nav-links" class="nav-links" :class="{ 'nav-open': isMenuOpen }" aria-label="Primary navigation">
       <router-link to="/" class="nav-link" @click="closeMenu">ABOUT</router-link>
       <router-link to="/education" class="nav-link" @click="closeMenu">EDUCATION</router-link>
       <router-link to="/experience" class="nav-link" @click="closeMenu">EXPERIENCE &amp; ACHIEVEMENTS</router-link>
       <router-link to="/profiles" class="nav-link" @click="closeMenu">PROFILES</router-link>
       <router-link to="/projects" class="nav-link" @click="closeMenu">PROJECTS</router-link>
       <router-link to="/contact" class="nav-link" @click="closeMenu">CONTACT</router-link>
-      <a href="/Resume.pdf" target="_blank" class="btn btn-gold mobile-resume-btn" @click="closeMenu">RESUME</a>
+      <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-gold mobile-resume-btn" @click="closeMenu" aria-label="Aman Kumar's Resume (PDF)">RESUME</a>
     </nav>
-    <a href="/Resume.pdf" target="_blank" class="btn btn-gold desktop-resume-btn">RESUME</a>
+    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-gold desktop-resume-btn" aria-label="Aman Kumar's Resume (PDF)">RESUME</a>
 
     <button 
       class="mobile-menu-toggle" 
       :class="{ 'is-active': isMenuOpen }" 
       @click="toggleMenu"
       aria-label="Toggle navigation menu"
+      :aria-expanded="isMenuOpen"
+      aria-controls="nav-links"
     >
       <span class="bar"></span>
       <span class="bar"></span>

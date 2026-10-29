@@ -117,7 +117,7 @@
           </p>
 
           <div class="cp-topics mb-8">
-            <h5 class="text-small-caps text-muted mb-3">Core Focus</h5>
+            <div class="sub-label text-small-caps text-muted mb-3">Core Focus</div>
             <div class="chips-container">
               <span v-for="t in profiles.codeforces.topics" :key="t" class="chip">{{ t }}</span>
             </div>
@@ -190,7 +190,7 @@
           </p>
 
           <div class="cp-topics mb-8">
-            <h5 class="text-small-caps text-muted mb-3">Core Focus</h5>
+            <div class="sub-label text-small-caps text-muted mb-3">Core Focus</div>
             <div class="chips-container">
               <span v-for="t in profiles.codechef.topics" :key="t" class="chip">{{ t }}</span>
             </div>
@@ -208,7 +208,7 @@
         <div class="card cp-card">
           <div class="cp-header">
             <div class="cp-icon-wrap atcoder-glow">
-              <img src="/atcoder.svg" alt="AtCoder Logo" class="cp-icon atcoder-icon" />
+              <img src="/atcoder.svg" alt="AtCoder Logo" class="cp-icon atcoder-icon" width="28" height="28" />
             </div>
             <span class="badge badge-outline cp-badge">ABC &amp; ARC</span>
           </div>
@@ -261,7 +261,7 @@
           </p>
 
           <div class="cp-topics mb-8">
-            <h5 class="text-small-caps text-muted mb-3">Core Focus</h5>
+            <div class="sub-label text-small-caps text-muted mb-3">Core Focus</div>
             <div class="chips-container">
               <span v-for="t in profiles.atcoder.topics" :key="t" class="chip">{{ t }}</span>
             </div>

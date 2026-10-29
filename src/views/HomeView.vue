@@ -6,7 +6,7 @@
         <div class="hero-text-col">
           <div class="page-eyebrow animate-fade-up" v-fade-up>
             <span class="eyebrow-dot"></span>
-            <span class="text-small-caps text-gold">Data Science &amp; Computing Undergraduate &bull; IIT Madras</span>
+            <span class="text-small-caps text-gold">Aman Kumar &bull; Data Science &amp; Computing Undergraduate &bull; IIT Madras</span>
           </div>
 
           <h1 class="hero-headline animate-fade-up delay-100" v-fade-up>
@@ -28,7 +28,7 @@
             <router-link to="/experience" class="btn btn-outline">
               <span>Experience &amp; Achievements</span>
             </router-link>
-            <a href="/Resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Download Aman Kumar's Resume (PDF)">Resume (PDF)</a>
           </div>
         </div>
 
@@ -41,8 +41,11 @@
             <div class="photo-inner-box">
               <img 
                 src="/photo.png" 
-                alt="Aman Kumar Portrait" 
-                class="hero-portrait" 
+                alt="Aman Kumar - Data Science and Software Engineering Student at IIT Madras" 
+                class="hero-portrait"
+                width="1856"
+                height="2262"
+                fetchpriority="high"
               />
             </div>
           </div>

@@ -1,9 +1,9 @@
 <template>
   <main>
     <section class="container" style="padding-top: 4rem; text-align: center;">
-      <h1 class="animate-fade-up" v-fade-up>Things I've Built</h1>
-      <p class="animate-fade-up delay-100" v-fade-up style="max-width: 540px; margin: 0 auto 4rem auto;">
-        A collection of software, data, and intelligent systems — built to solve problems, explore ideas, and keep learning.
+      <h1 class="animate-fade-up" v-fade-up>Projects &amp; Software Systems</h1>
+      <p class="animate-fade-up delay-100" v-fade-up style="max-width: 580px; margin: 0 auto 4rem auto;">
+        A collection of full-stack web applications, data-driven platforms, and system architectures designed and built by Aman Kumar.
       </p>
       
       <div class="projects-grid">
@@ -25,7 +25,7 @@
           </div>
 
           <div class="project-image-box">
-            <img src="/jee_counselling.png" alt="JEE Counselling Platform" />
+            <img src="/jee_counselling.png" alt="JEE Counselling Platform - JoSAA and CSAB College Predictor &amp; Cut-off Analytics" width="1280" height="800" loading="lazy" />
           </div>
 
           <div class="project-card-body">
@@ -65,7 +65,7 @@
           </div>
 
           <div class="project-image-box">
-            <img src="/trek_management.png" alt="Trekking Management Application" />
+            <img src="/trek_management.png" alt="Trekking Management System - Flask, SQLite and REST API Web Application" width="1376" height="768" loading="lazy" />
           </div>
 
           <div class="project-card-body">
@@ -98,6 +98,12 @@
         >
           More Projects on GitHub ↗
         </a>
+      </div>
+
+      <div class="projects-nav-cta animate-fade-up delay-300" v-fade-up style="margin-top: 3.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <router-link to="/education" class="btn btn-outline btn-sm">Academic Qualifications &rarr;</router-link>
+        <router-link to="/experience" class="btn btn-outline btn-sm">Experience &amp; Honors &rarr;</router-link>
+        <router-link to="/contact" class="btn btn-outline btn-sm">Contact Me &rarr;</router-link>
       </div>
     </section>
   </main>

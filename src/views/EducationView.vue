@@ -501,7 +501,7 @@
     <!-- Relevant Coursework Section -->
     <section class="container compact-section">
       <div class="section-header-block animate-fade-up" v-fade-up>
-        <h3 class="section-subtitle-sm text-small-caps text-gold">Domain Breakdown</h3>
+        <div class="section-tag text-small-caps text-gold">Domain Breakdown</div>
         <h2 class="section-title">Core Academic Coursework</h2>
       </div>
 

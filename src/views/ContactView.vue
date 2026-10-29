@@ -60,7 +60,7 @@
         <div class="right-col animate-fade-up delay-200" v-fade-up>
           
           <div class="section-header">
-            <p class="text-small-caps text-gold">Get In Touch</p>
+            <h2 class="text-small-caps text-gold section-subheading-h2">Get In Touch</h2>
             <div class="header-line"></div>
           </div>
           
@@ -78,7 +78,7 @@
               <p class="card-link">amankumar.pro2006@gmail.com</p>
             </a>
 
-            <a href="https://www.linkedin.com/in/aman-kumar-aka-umang/" target="_blank" class="grid-card">
+            <a href="https://www.linkedin.com/in/aman-kumar-aka-umang/" target="_blank" rel="noopener noreferrer" class="grid-card">
               <div class="card-header">
                 <div class="icon-circle">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +91,7 @@
               <p class="card-link">linkedin.com/in/aman-kumar-aka-umang</p>
             </a>
 
-            <a href="https://github.com/Amankumar270306" target="_blank" class="grid-card">
+            <a href="https://github.com/Amankumar270306" target="_blank" rel="noopener noreferrer" class="grid-card">
               <div class="card-header">
                 <div class="icon-circle">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -104,7 +104,7 @@
               <p class="card-link">github.com/Amankumar270306</p>
             </a>
 
-            <a href="/Resume.pdf" target="_blank" class="grid-card">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="grid-card">
               <div class="card-header">
                 <div class="icon-circle">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -122,7 +122,7 @@
           </div>
 
           <div class="section-header" style="margin-top: 3rem;">
-            <p class="text-small-caps text-gold">Let's Collaborate</p>
+            <h2 class="text-small-caps text-gold section-subheading-h2">Let's Collaborate</h2>
             <div class="header-line"></div>
           </div>
 

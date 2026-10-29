@@ -1,0 +1,9 @@
+# Canonical redirects for old or alias routes
+/about                     /             301!
+/experience-achievements   /experience   301!
+/achievements              /experience   301!
+/qualifications            /education    301!
+
+# Netlify SPA history mode rewrite rule
+/*                         /index.html   200
+
