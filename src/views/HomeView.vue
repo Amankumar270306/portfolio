@@ -6,18 +6,18 @@
         <div class="hero-text-col">
           <div class="page-eyebrow animate-fade-up" v-fade-up>
             <span class="eyebrow-dot"></span>
-            <span class="text-small-caps text-gold">Aman Kumar &bull; Data Science &amp; Computing Undergraduate &bull; IIT Madras</span>
+            <span class="text-small-caps text-gold">Aman Kumar &bull; BS in Data Science &amp; Applications &bull; IIT Madras (IITM)</span>
           </div>
 
           <h1 class="hero-headline animate-fade-up delay-100" v-fade-up>
-            Building intelligent<br />
-            systems and solving<br />
-            complex problems<br />
-            with data and code.
+            Aman Kumar &mdash;<br />
+            Engineering intelligent<br />
+            systems with code<br />
+            and data science.
           </h1>
 
           <p class="hero-bio animate-fade-up delay-200" v-fade-up>
-            Undergraduate student pursuing a <strong>B.S. in Data Science and Applications</strong> at the <strong>Indian Institute of Technology Madras</strong>. Combining mathematical rigor, machine learning, and systems engineering to design reliable computational models, full-stack software architectures, and data-driven solutions.
+            Welcome to the official developer portfolio of <strong>Aman Kumar</strong> (also known as <strong>Aman Kumar Pro</strong>), an undergraduate student pursuing a <strong>BS in Data Science and Applications</strong> at the <strong>Indian Institute of Technology Madras (IITM)</strong>. Combining mathematical rigor, machine learning, systems architecture, and open-source development to engineer reliable computational models, full-stack software architectures, and data-driven solutions.
           </p>
 
           <div class="hero-ctas animate-fade-up delay-300" v-fade-up>
@@ -56,7 +56,7 @@
       <div class="quick-highlights-bar animate-fade-up delay-300" v-fade-up>
         <div class="highlight-item">
           <span class="highlight-label">INSTITUTION</span>
-          <span class="highlight-val text-gold">IIT Madras (B.S. DS)</span>
+          <span class="highlight-val text-gold">IIT Madras (IITM BS DS)</span>
         </div>
         <div class="highlight-divider"></div>
         <div class="highlight-item">
@@ -75,8 +75,8 @@
         </div>
         <div class="highlight-divider"></div>
         <div class="highlight-item">
-          <span class="highlight-label">DIGITAL INITIATIVE</span>
-          <span class="highlight-val">AKcollegeReview</span>
+          <span class="highlight-label">OPEN SOURCE &bull; PyPI</span>
+          <span class="highlight-val">Nopper AI CLI</span>
         </div>
       </div>
     </section>

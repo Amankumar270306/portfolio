@@ -1,3 +1,6 @@
+# API Proxy for AtCoder to resolve CORS in production
+/api/atcoder/*  https://atcoder.jp/:splat  200!
+
 # Canonical redirects for old or alias routes
 /about                     /             301!
 /experience-achievements   /experience   301!
@@ -6,4 +9,3 @@
 
 # Netlify SPA history mode rewrite rule
 /*                         /index.html   200
-

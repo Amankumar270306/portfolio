@@ -104,6 +104,19 @@
               <p class="card-link">github.com/Amankumar270306</p>
             </a>
 
+            <a href="https://pypi.org/project/nopper/" target="_blank" rel="noopener noreferrer" class="grid-card">
+              <div class="card-header">
+                <div class="icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <h3 class="card-title">PyPI (Python Packages)</h3>
+              </div>
+              <p class="card-desc">Inspect published libraries and AI developer tools.</p>
+              <p class="card-link">pypi.org/project/nopper</p>
+            </a>
+
             <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" class="grid-card">
               <div class="card-header">
                 <div class="icon-circle">

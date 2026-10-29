@@ -4,25 +4,25 @@
     <section class="container section hero-section">
       <div class="page-eyebrow animate-fade-up" v-fade-up>
         <span class="eyebrow-dot"></span>
-        <span class="text-small-caps text-gold">Academic Foundation &amp; Formal Credentials</span>
+        <span class="text-small-caps text-gold">Aman Kumar &bull; Academic Qualifications &bull; IIT Madras (IITM)</span>
       </div>
       <h1 class="animate-fade-up delay-100" v-fade-up style="max-width: 900px;">
         Education &amp;<br />Academic Qualifications
       </h1>
       <p class="animate-fade-up delay-200 subtitle" v-fade-up>
-        Building a rigorous foundation in Data Science, Computing, and Software Systems through the Indian Institute of Technology Madras, hands-on architectural projects, and verified technical credentials.
+        Academic degree progression and coursework of Aman Kumar pursuing a BS in Data Science and Applications at the Indian Institute of Technology Madras (IITM), built upon rigorous mathematical theory, computing, and architectural systems engineering.
       </p>
 
       <!-- Quick Highlights Bar -->
       <div class="quick-highlights-bar animate-fade-up delay-300" v-fade-up>
         <div class="highlight-item">
           <span class="highlight-label">INSTITUTION</span>
-          <span class="highlight-val">IIT Madras</span>
+          <span class="highlight-val">IIT Madras (IITM)</span>
         </div>
         <div class="highlight-divider"></div>
         <div class="highlight-item">
           <span class="highlight-label">DEGREE</span>
-          <span class="highlight-val">B.S. in Data Science</span>
+          <span class="highlight-val">BS in Data Science (IITM BS)</span>
         </div>
         <div class="highlight-divider"></div>
         <div class="highlight-item">

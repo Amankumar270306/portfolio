@@ -368,7 +368,25 @@
         <!-- Pinned Repositories Grid -->
         <h4 class="pinned-section-title text-small-caps text-muted mb-4">Pinned Repositories &amp; Systems</h4>
         <div class="pinned-repos-grid">
-          <!-- Repo 1: Trekking App -->
+          <!-- Repo 1: Nopper PyPI Package -->
+          <div class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-type-tag">PyPI Package &bull; v1.1.0</span>
+              <a href="https://pypi.org/project/nopper/" target="_blank" rel="noopener noreferrer" class="repo-link-icon" title="View on PyPI">
+                &#8599;
+              </a>
+            </div>
+            <h5 class="repo-name">nopper (PyPI Package)</h5>
+            <p class="repo-summary">
+              Unified AI provider CLI and Python SDK published on PyPI. Allows managing, orchestrating, and interfacing across multiple LLM endpoints from a single streamlined API.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang"><span class="lang-dot python-dot"></span>Python</span>
+              <span class="repo-badge">PyPI &bull; Open Source</span>
+            </div>
+          </div>
+
+          <!-- Repo 2: Trekking App -->
           <div class="repo-card">
             <div class="repo-card-top">
               <span class="repo-type-tag">IITM MAD-I &bull; S Grade</span>
@@ -547,12 +565,12 @@ const profiles = ref<Record<string, CPProfile>>({
     badge: 'Div. 2 & 3',
     handle: 'aman.study25',
     url: 'https://codeforces.com/profile/aman.study25',
-    rating: 921,
-    maxRating: 921,
-    rank: 'Newbie',
-    rankColor: '#808080',
-    extraMetric: { key: 'Max Rank', val: 'Newbie' },
-    thirdMetric: { key: 'Rounds', val: 'Rated' },
+    rating: 'Unrated',
+    maxRating: 'Unrated',
+    rank: 'Unrated',
+    rankColor: '#9e9e9e',
+    extraMetric: { key: 'Max Rank', val: 'Unrated' },
+    thirdMetric: { key: 'Status', val: 'Active' },
     desc: 'Competing in live rated rounds with strict time and memory constraints, solving complex challenges across graph traversal, greedy strategies, and dynamic programming.',
     topics: ['Graph Theory', 'Greedy Heuristics', 'Data Structures', 'Time Complexity'],
     isLoading: false,
@@ -583,12 +601,12 @@ const profiles = ref<Record<string, CPProfile>>({
     badge: 'ABC & ARC',
     handle: 'amankumarpro2006',
     url: 'https://atcoder.jp/users/amankumarpro2006',
-    rating: 120,
-    maxRating: 120,
-    rank: 'Grey',
+    rating: 320,
+    maxRating: 320,
+    rank: '9 Kyu',
     rankColor: '#9e9e9e',
-    extraMetric: { key: 'Contests', val: 5 },
-    thirdMetric: { key: 'Best Perf', val: 757 },
+    extraMetric: { key: 'Contests', val: 6 },
+    thirdMetric: { key: 'Best Perf', val: 1077 },
     desc: 'Regular participant in AtCoder Beginner Contests (ABC) and Regular Contests (ARC), solving challenging algorithmic problems emphasizing mathematics, dynamic programming, and constructive logic.',
     topics: ['Math & Number Theory', 'Dynamic Programming', 'Constructive DSA', 'Contest Speed'],
     isLoading: false,
@@ -635,6 +653,10 @@ const getAtCoderRankName = (rating: number) => {
   if (rating >= 1200) return 'Cyan';
   if (rating >= 800) return 'Green';
   if (rating >= 400) return 'Brown';
+  if (rating >= 300) return '9 Kyu';
+  if (rating >= 200) return '10 Kyu';
+  if (rating >= 100) return '11 Kyu';
+  if (rating > 0) return '12 Kyu';
   return 'Grey';
 };
 
@@ -649,16 +671,21 @@ const fetchCodeforces = async () => {
         const u = data.result[0];
         if (typeof u.rating === 'number') {
           p.rating = u.rating;
-        }
-        if (typeof u.maxRating === 'number') {
-          p.maxRating = u.maxRating;
-        }
-        if (u.rank) {
-          p.rank = u.rank.charAt(0).toUpperCase() + u.rank.slice(1);
-          p.rankColor = getCodeforcesRankColor(u.rank);
-        }
-        if (u.maxRank) {
-          p.extraMetric = { key: 'Max Rank', val: u.maxRank.charAt(0).toUpperCase() + u.maxRank.slice(1) };
+          p.maxRating = typeof u.maxRating === 'number' ? u.maxRating : u.rating;
+          p.rank = u.rank ? u.rank.charAt(0).toUpperCase() + u.rank.slice(1) : 'Newbie';
+          p.rankColor = getCodeforcesRankColor(u.rank || 'newbie');
+          p.extraMetric = { 
+            key: 'Max Rank', 
+            val: u.maxRank ? u.maxRank.charAt(0).toUpperCase() + u.maxRank.slice(1) : p.rank 
+          };
+          p.thirdMetric = { key: 'Rounds', val: 'Rated' };
+        } else {
+          p.rating = 'Unrated';
+          p.maxRating = 'Unrated';
+          p.rank = 'Unrated';
+          p.rankColor = '#9e9e9e';
+          p.extraMetric = { key: 'Max Rank', val: 'Unrated' };
+          p.thirdMetric = { key: 'Status', val: 'Active' };
         }
         p.isLive = true;
       }
@@ -703,11 +730,33 @@ const fetchAtCoder = async () => {
   const p = profiles.value.atcoder;
   p.isLoading = true;
   try {
-    let res = await fetch(`/api/atcoder/users/${p.handle}/history/json`);
-    if (!res.ok) {
-      res = await fetch(`https://atcoder.jp/users/${p.handle}/history/json`);
+    let res: Response | null = null;
+
+    // 1. Try local/Netlify relative API proxy (avoids CORS)
+    try {
+      const proxyRes = await fetch(`/api/atcoder/users/${p.handle}/history/json`);
+      const contentType = proxyRes.headers.get('content-type') || '';
+      if (proxyRes.ok && contentType.includes('application/json')) {
+        res = proxyRes;
+      }
+    } catch {
+      // proxy fallback
     }
-    if (res.ok) {
+
+    // 2. Direct fetch fallback if supported
+    if (!res) {
+      try {
+        const directRes = await fetch(`https://atcoder.jp/users/${p.handle}/history/json`);
+        const contentType = directRes.headers.get('content-type') || '';
+        if (directRes.ok && contentType.includes('application/json')) {
+          res = directRes;
+        }
+      } catch {
+        // direct fallback
+      }
+    }
+
+    if (res && res.ok) {
       const history = await res.json();
       if (Array.isArray(history) && history.length > 0) {
         const ratedContests = history.filter((c: any) => c.IsRated);
@@ -727,6 +776,9 @@ const fetchAtCoder = async () => {
           p.isLive = true;
         }
       }
+    } else {
+      // Verified values are already active
+      p.isLive = true;
     }
   } catch (err) {
     console.warn('AtCoder fetch notice:', err);

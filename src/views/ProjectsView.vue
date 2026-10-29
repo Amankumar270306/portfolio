@@ -86,6 +86,82 @@
             </div>
           </div>
         </a>
+
+        <!-- Project 3: Nopper Python Package on PyPI -->
+        <a 
+          href="https://pypi.org/project/nopper/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-card animate-fade-up delay-200" 
+          v-fade-up
+        >
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-address">pypi.org/project/nopper</div>
+            <span class="external-icon">↗</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-meta">
+              <span class="badge-accent">OPEN SOURCE &bull; PyPI PACKAGE</span>
+              <span class="live-pill">● v1.1.0 LIVE</span>
+            </div>
+            <h2 class="project-card-title">Nopper &mdash; Unified AI Provider CLI &amp; SDK</h2>
+            <p class="project-subtitle">Author: Aman Kumar &bull; PyPI Package</p>
+            <p class="project-card-desc">
+              Production-grade Python CLI and SDK enabling developers to orchestrate, configure, and manage diverse AI providers and LLM endpoints from a single unified interface.
+            </p>
+            <div class="tags-container">
+              <span class="tag">Python</span>
+              <span class="tag">PyPI</span>
+              <span class="tag">CLI</span>
+              <span class="tag">AI Orchestration</span>
+              <span class="tag">Open Source</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 4: Developer Portfolio -->
+        <a 
+          href="https://github.com/Amankumar270306/portfolio" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-card animate-fade-up delay-250" 
+          v-fade-up
+        >
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="browser-address">github.com/Amankumar270306/portfolio</div>
+            <span class="external-icon">↗</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="card-meta">
+              <span class="badge-accent">FRONTEND &amp; PERFORMANCE</span>
+              <span class="live-pill">● OPEN SOURCE</span>
+            </div>
+            <h2 class="project-card-title">Aman Kumar Developer Portfolio</h2>
+            <p class="project-subtitle">Vue 3, Vite &amp; TypeScript</p>
+            <p class="project-card-desc">
+              High-performance reactive portfolio engineered with Vue 3, TypeScript, and Netlify edge proxies. Features real-time competitive programming API synchronization, responsive luxury dark mode, and rigorous technical SEO.
+            </p>
+            <div class="tags-container">
+              <span class="tag">Vue.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Technical SEO</span>
+              <span class="tag">Netlify</span>
+            </div>
+          </div>
+        </a>
       </div>
 
       <div style="margin-top: 5rem;" class="animate-fade-up delay-200" v-fade-up>

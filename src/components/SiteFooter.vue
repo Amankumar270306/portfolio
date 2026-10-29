@@ -6,10 +6,12 @@
       <div class="footer-links text-small-caps">
         <a href="https://www.linkedin.com/in/aman-kumar-aka-umang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/Amankumar270306" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://pypi.org/project/nopper/" target="_blank" rel="noopener noreferrer">PyPI</a>
         <a href="https://leetcode.com/u/amankumar_pro2006/" target="_blank" rel="noopener noreferrer">LeetCode</a>
         <a href="https://codeforces.com/profile/aman.study25" target="_blank" rel="noopener noreferrer">Codeforces</a>
         <a href="https://www.codechef.com/users/amankumarpro" target="_blank" rel="noopener noreferrer">CodeChef</a>
         <a href="https://atcoder.jp/users/amankumarpro2006" target="_blank" rel="noopener noreferrer">AtCoder</a>
+        <a href="https://www.kaggle.com/amanpro2006" target="_blank" rel="noopener noreferrer">Kaggle</a>
       </div>
     </div>
   </footer>

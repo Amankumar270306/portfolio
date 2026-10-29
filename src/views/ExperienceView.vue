@@ -4,13 +4,13 @@
     <section class="container section hero-section">
       <div class="page-eyebrow animate-fade-up" v-fade-up>
         <span class="eyebrow-dot"></span>
-        <span class="text-small-caps text-gold">Professional Timeline &amp; Major Honors</span>
+        <span class="text-small-caps text-gold">Aman Kumar &bull; Research &amp; Honors &bull; IIT Madras (IITM)</span>
       </div>
       <h1 class="animate-fade-up delay-100" v-fade-up style="max-width: 920px;">
         Experience &amp;<br />Achievements
       </h1>
       <p class="animate-fade-up delay-200 subtitle" v-fade-up>
-        A documented chronological timeline of ongoing computational research in aerospace systems at IIT Madras and educational digital entrepreneurship, alongside a distinct record of competitive academic and international achievements.
+        Chronological research experience of Aman Kumar at AVASYA Aerospace Society (IIT Madras), selection for GCI World 2026 at The University of Tokyo, digital entrepreneurship, and international competitive achievements.
       </p>
 
       <!-- Quick Highlights Metric Bar -->
